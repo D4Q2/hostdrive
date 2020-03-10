@@ -61,7 +61,7 @@
         
         // And also the same process for the home button
         var homeButton = document.createElement("BUTTON");
-        homeButton.innerHTML = "Settings";
+        homeButton.innerHTML = "Home";
         homeButton.setAttribute("class", "menuButton");
         homeButton.setAttribute("id", "homeButton");
         menu.appendChild(homeButton);
