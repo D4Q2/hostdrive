@@ -78,7 +78,8 @@ body
   { 
     grid-area: bdayDriveHeader; 
     text-align: center;
-    font-size: 12pt;
+    font-size: 14pt;
+    font-weight: bold;
     padding: 20px 0;
   }
 
@@ -94,7 +95,8 @@ body
   { 
     grid-area: safeDriveHeader; 
     text-align: center;
-    font-size: 12pt;
+    font-size: 14pt;
+    font-weight: bold;
     padding: 20px 0;
   }
 
@@ -102,8 +104,7 @@ body
   {  
     grid-area: safeDriveText; 
     text-align: center;
-    font-size: 15pt;
-    font-weight: bold;
+    font-size: 12pt;
     padding: 20px 0;
   }
 
