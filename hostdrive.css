@@ -74,17 +74,33 @@ body
     margin-left: -10px;
   }
 
-  .bdayDrive 
+  .bdayDriveHeader
   { 
-    grid-area: bdayDrive; 
+    grid-area: bdayDriveHeader; 
     text-align: center;
     font-size: 12pt;
     padding: 20px 0;
   }
 
-  .safeDrive
+  .bdayDriveText
+  { 
+    grid-area: bdayDriveText; 
+    text-align: center;
+    font-size: 12pt;
+    padding: 20px 0;
+  }
+
+  .safeDriveHeader
+  { 
+    grid-area: safeDriveHeader; 
+    text-align: center;
+    font-size: 12pt;
+    padding: 20px 0;
+  }
+
+  .safeDriveText
   {  
-    grid-area: safeDrive; 
+    grid-area: safeDriveText; 
     text-align: center;
     font-size: 15pt;
     font-weight: bold;
@@ -108,9 +124,9 @@ body
       'menu menu menu menu menu menu'
       'title title title title title title'
       'subtitle subtitle subtitle subtitle subtitle subtitle'
-      'bdayDrive bdayDrive bdayDrive bdayDrive bdayDrive bdayDrive'
-      'bdayDrive bdayDrive bdayDrive bdayDrive bdayDrive bdayDrive'
-      'safeDrive safeDrive safeDrive safeDrive safeDrive safeDrive'
-      'safeDrive safeDrive safeDrive safeDrive safeDrive safeDrive'
+      'bdayDriveHeader bdayDriveHeader bdayDriveHeader bdayDriveHeader bdayDriveHeader bdayDriveHeader'
+      'bdayDriveText bdayDriveText bdayDriveText bdayDriveText bdayDriveText bdayDriveText'
+      'safeDriveHeader safeDriveHeader safeDriveHeader safeDriveHeader safeDriveHeader safeDriveHeader'
+      'safeDriveText safeDriveText safeDriveText safeDriveText safeDriveText safeDriveText'
       'donations donations donations donations donations donations';
   }
