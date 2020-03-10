@@ -74,26 +74,26 @@ body
     margin-left: -10px;
   }
 
-  .image 
+  .bdayDrive 
   { 
-    grid-area: image; 
+    grid-area: bdayDrive; 
     text-align: center;
     font-size: 12pt;
     padding: 20px 0;
   }
 
-  .aboutHeader
+  .safeDrive
   {  
-    grid-area: aboutHeader; 
+    grid-area: safeDrive; 
     text-align: center;
     font-size: 15pt;
     font-weight: bold;
     padding: 20px 0;
   }
 
-  .aboutText
+  .donations
   { 
-    grid-area: aboutText; 
+    grid-area: donations; 
     text-align: center;
     font-size: 12pt;
     padding: 20px 0;
@@ -108,8 +108,9 @@ body
       'menu menu menu menu menu menu'
       'title title title title title title'
       'subtitle subtitle subtitle subtitle subtitle subtitle'
-      'image image image . . .'
-      'image image image aboutHeader aboutHeader aboutHeader'
-      'image image image aboutText aboutText aboutText'
-      'image image image . . .';
+      'bdayDrive bdayDrive bdayDrive bdayDrive bdayDrive bdayDrive'
+      'bdayDrive bdayDrive bdayDrive bdayDrive bdayDrive bdayDrive'
+      'safeDrive safeDrive safeDrive safeDrive safeDrive safeDrive'
+      'safeDrive safeDrive safeDrive safeDrive safeDrive safeDrive'
+      'donations donations donations donations donations donations';
   }
