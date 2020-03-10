@@ -11,6 +11,12 @@
      window.open('https://d4q2.github.io/settings');
    }
 
+   // And for the settings page
+   function homePage()
+   {
+     window.open('https://d4q2.github.io/home');
+   }
+
 
    let menuBool = false;
 
@@ -52,6 +58,15 @@
         menu.appendChild(settingsButton);
         settingsButton.style.transform = "translateX(-20px)";
         settingsButton.onclick = settingsPage;
+        
+        // And also the same process for the home button
+        var homeButton = document.createElement("BUTTON");
+        homeButton.innerHTML = "Settings";
+        homeButton.setAttribute("class", "menuButton");
+        homeButton.setAttribute("id", "homeButton");
+        menu.appendChild(homeButton);
+        homeButton.style.transform = "translateX(-30px)";
+        homeButton.onclick = homePage;
      }
 
      else
