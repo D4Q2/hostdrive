@@ -1,4 +1,38 @@
-// A function to take us to the donate page
+    // We want to start by adjusting the color settings to match the saved color settings
+
+     // Make a variable for our xmlHttpRequest which we send out to get our data
+     var xmlhttp = new XMLHttpRequest();
+
+     //When it is ready
+     xmlhttp.onreadystatechange = function() 
+     {
+       if (this.readyState == 4 && this.status == 200) 
+       {
+         //Activate our function
+         getXML(this);
+       }
+     };
+     // Open it and get the data from the URL
+     xmlhttp.open("GET", "cd_catalog.xml", true);
+
+     // Send it on
+     xmlhttp.send();
+   }
+
+   function getXML(xml) 
+   {
+     // Create som variables
+     var x, i, xmlDoc, txt;
+     xmlDoc = xml.responseXML;
+     txt = "";
+     x = xmlDoc.getElementsByTagName("backgroundColorBody");
+     txt += x[0].childNodes[0].nodeValue;
+     document.body.style.background = txt;
+   }
+
+
+
+   // A function to take us to the donate page
    function donatePage()
    {
      // Code to take us to the donate page
