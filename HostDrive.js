@@ -17,7 +17,6 @@
 
      // Send it on
      xmlhttp.send();
-   }
 
    function getXML(xml) 
    {
