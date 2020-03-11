@@ -12,7 +12,7 @@
        //Make our response text a variable and parse it
        parser = new DOMParser();
        xmlDoc = parser.parseFromString(req.responseText,"text/xml");
-       bodyColor = xmlDoc.getElementsByTagName("backgroundColorBody")[0].childNodes[0].nodeValue;
+       bodyColor = xmlDoc.getElementsByTagName("backgroundcolorbody")[0].childNodes[0].nodeValue;
        document.body.style.background = bodyColor;
      }
 
