@@ -3,7 +3,7 @@
      // Make a variable for our xmlHttpRequest which we send out to get our data
      var req = new XMLHttpRequest(); 
      // Use request to open the URL
-     req.open('GET', 'http://d4q2.github.io/xml/', false);
+     req.open('GET', 'https://d4q2.github.io/xml/', false);
      // Send it
      req.send(null);
      // If the request status is 200, then it is ready
