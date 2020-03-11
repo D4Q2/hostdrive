@@ -9,9 +9,9 @@
      // If the request status is 200, then it is ready
      if(req.status == 200)
      {
-       //Make our response text a variable
-       var xmlDoc = req.responseText;
-       // Use getElementsByTagName to find what we need (in this case the background color for the body) and make the body background color be equal to that
+       //Make our response text a variable and parse it
+       parser = new DOMParser();
+       xmlDoc = parser.parseFromString(req.responseText,"text/xml");
        bodyColor = xmlDoc.getElementsByTagName("backgroundColorBody")[0].childNodes[0].nodeValue;
        document.body.style.background = bodyColor;
      }
