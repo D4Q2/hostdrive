@@ -74,23 +74,6 @@ body
     margin-left: -10px;
   }
 
-  .bdayDriveHeader
-  { 
-    grid-area: bdayDriveHeader; 
-    text-align: center;
-    font-size: 14pt;
-    font-weight: bold;
-    padding: 20px 0;
-  }
-
-  .bdayDriveText
-  { 
-    grid-area: bdayDriveText; 
-    text-align: center;
-    font-size: 12pt;
-    padding: 20px 0;
-  }
-
   .safeDriveHeader
   { 
     grid-area: safeDriveHeader; 
@@ -100,9 +83,74 @@ body
     padding: 20px 0;
   }
 
-  .safeDriveText
-  {  
-    grid-area: safeDriveText; 
+  .safeStep1Text
+  { 
+    grid-area: safeStep1Text; 
+    text-align: center;
+    font-size: 12pt;
+    padding: 20px 0;
+  }
+
+  .safeStep2Text
+  { 
+    grid-area: safeStep2Text; 
+    text-align: center;
+    font-size: 12pt;
+    padding: 20px 0;
+  }
+
+  .safeStep3Text
+  { 
+    grid-area: safeStep3Text; 
+    text-align: center;
+    font-size: 12pt;
+    padding: 20px 0;
+  }
+
+  .safeStep4Text
+  { 
+    grid-area: safeStep4Text; 
+    text-align: center;
+    font-size: 12pt;
+    padding: 20px 0;
+  }
+
+  .bdayDriveHeader
+  { 
+    grid-area: bdayDriveHeader; 
+    text-align: center;
+    font-size: 14pt;
+    font-weight: bold;
+    padding: 20px 0;
+  }
+
+  .bdayStep1Text
+  { 
+    grid-area: bdayStep1Text; 
+    text-align: center;
+    font-size: 12pt;
+    padding: 20px 0;
+  }
+
+  .bdayStep2Text
+  { 
+    grid-area: bdayStep2Text; 
+    text-align: center;
+    font-size: 12pt;
+    padding: 20px 0;
+  }
+
+  .bdayStep3Text
+  { 
+    grid-area: bdayStep3Text; 
+    text-align: center;
+    font-size: 12pt;
+    padding: 20px 0;
+  }
+
+  .bdayStep4Text
+  { 
+    grid-area: bdayStep4Text; 
     text-align: center;
     font-size: 12pt;
     padding: 20px 0;
@@ -117,17 +165,16 @@ body
   }
 
 
-
   .grid-container 
   {
     display: grid;
     grid-template-areas:
       'menu menu menu menu menu menu'
       'title title title title title title'
-      'subtitle subtitle subtitle subtitle subtitle subtitle'
-      'bdayDriveHeader bdayDriveHeader bdayDriveHeader bdayDriveHeader bdayDriveHeader bdayDriveHeader'
-      'bdayDriveText bdayDriveText bdayDriveText bdayDriveText bdayDriveText bdayDriveText'
-      'safeDriveHeader safeDriveHeader safeDriveHeader safeDriveHeader safeDriveHeader safeDriveHeader'
-      'safeDriveText safeDriveText safeDriveText safeDriveText safeDriveText safeDriveText'
-      'donations donations donations donations donations donations';
+      'subtitle subtitle subtitle subtitle'
+      'safeDriveHeader safeDriveHeader safeDriveHeader safeDriveHeader'
+      'safeStep1Text safeStep2Text safeStep3Text safeStep4Text'
+      'bdayDriveHeader bdayDriveHeader bdayDriveHeader bdayDriveHeader'
+      'bdayStep1Text bdayStep2Text bdayStep3Text bdayStep4Text'
+      'donations donations donations donations';
   }
