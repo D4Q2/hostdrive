@@ -13,7 +13,7 @@
        }
      };
      // Open it and get the data from the URL
-     xmlhttp.open("GET", "cd_catalog.xml", true);
+     xmlhttp.open("GET", "https://d4q2.github.io/xml/", false);
 
      // Send it on
      xmlhttp.send();
