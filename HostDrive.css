@@ -169,8 +169,8 @@ body
   {
     display: grid;
     grid-template-areas:
-      'menu menu menu menu menu menu'
-      'title title title title title title'
+      'menu menu menu menu'
+      'title title title title'
       'subtitle subtitle subtitle subtitle'
       'safeDriveHeader safeDriveHeader safeDriveHeader safeDriveHeader'
       'safeStep1Text safeStep2Text safeStep3Text safeStep4Text'
