@@ -12,7 +12,8 @@
        //Make our response text a variable
        var xmlDoc = req.responseText;
        // Use getElementsByTagName to find what we need (in this case the background color for the body) and make the body background color be equal to that
-       document.body.style.background = xmlDoc.getElementsByTagName("backgroundColorBody")[0].childNodes[0].nodeValue;
+       bodyColor = xmlDoc.getElementsByTagName("backgroundColorBody")[0].childNodes[0].nodeValue;
+       document.body.style.background = bodyColor;
      }
 
 
