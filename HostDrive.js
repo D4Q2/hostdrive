@@ -1,33 +1,19 @@
     // We want to start by adjusting the color settings to match the saved color settings
 
      // Make a variable for our xmlHttpRequest which we send out to get our data
-     var xmlhttp = new XMLHttpRequest();
-
-     //When it is ready
-     xmlhttp.onreadystatechange = function() 
+     var req = new XMLHttpRequest(); 
+     // Use request to open the URL
+     req.open('GET', 'http://www.mydomain.com/', false);
+     // Send it
+     req.send(null);
+     // If the request status is 200, then it is ready
+     if(req.status == 200)
      {
-       if (this.readyState == 4 && this.status == 200) 
-       {
-         //Activate our function
-         getXML(this);
-       }
-     };
-     // Open it and get the data from the URL
-     xmlhttp.open("GET", "https://d4q2.github.io/xml/", true);
-
-     // Send it on
-     xmlhttp.send();
-
-   function getXML(xml) 
-   {
-     // Create som variables
-     var x, i, xmlDoc, txt;
-     xmlDoc = xml.responseXML;
-     txt = "";
-     x = xmlDoc.getElementsByTagName("backgroundColorBody");
-     txt += x[0].childNodes[0].nodeValue;
-     document.body.style.background = txt;
-   }
+       //Make our response text a variable
+       var xmlDoc = req.responseText;
+       // Use getElementsByTagName to find what we need (in this case the background color for the body) and make the body background color be equal to that
+       document.body.style.background = xmlDoc.getElementsByTagName("backgroundColorBody")[0].childNodes[0].nodeValue;
+     }
 
 
 
