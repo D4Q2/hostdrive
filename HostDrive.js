@@ -13,7 +13,7 @@
        }
      };
      // Open it and get the data from the URL
-     xmlhttp.open("GET", "https://d4q2.github.io/xml/", false);
+     xmlhttp.open("GET", "https://d4q2.github.io/xml/", true);
 
      // Send it on
      xmlhttp.send();
