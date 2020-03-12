@@ -1,22 +1,3 @@
-    // We want to start by adjusting the color settings to match the saved color settings
-
-     // Make a variable for our xmlHttpRequest which we send out to get our data
-     var req = new XMLHttpRequest(); 
-     // Use request to open the URL
-     req.open('GET', 'https://d4q2.github.io/xml/', false);
-     // Send it
-     req.send(null);
-     // If the request status is 200, then it is ready
-     if(req.status == 200)
-     {
-       //Make our response text a variable and parse it
-       parser = new DOMParser();
-       xmlDoc = parser.parseFromString(req.responseText,"text/xml");
-       bodyColor = xmlDoc.getElementsByTagName("backgroundcolorbody")[0].childNodes[0].nodeValue;
-       document.body.style.background = bodyColor;
-     }
-
-
 
    // A function to take us to the donate page
    function donatePage()
@@ -25,11 +6,6 @@
      window.open('https://d4q2.github.io/donate');
    }
 
-   // And for the settings page
-   function settingsPage()
-   {
-     window.open('https://d4q2.github.io/settings');
-   }
 
    // And for the settings page
    function homePage()
@@ -69,15 +45,6 @@
         // Move it into the perfect position
         donateButton.style.transform = "translateX(-10px)";
 
-
-        // And the same process for the settings button
-        var settingsButton = document.createElement("BUTTON");
-        settingsButton.innerHTML = "Settings";
-        settingsButton.setAttribute("class", "menuButton");
-        settingsButton.setAttribute("id", "settingsButton");
-        menu.appendChild(settingsButton);
-        settingsButton.style.transform = "translateX(-20px)";
-        settingsButton.onclick = settingsPage;
         
         // And also the same process for the home button
         var homeButton = document.createElement("BUTTON");
@@ -85,7 +52,7 @@
         homeButton.setAttribute("class", "menuButton");
         homeButton.setAttribute("id", "homeButton");
         menu.appendChild(homeButton);
-        homeButton.style.transform = "translateX(-30px)";
+        homeButton.style.transform = "translateX(-20px)";
         homeButton.onclick = homePage;
      }
 
