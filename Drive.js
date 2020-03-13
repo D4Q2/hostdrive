@@ -3,14 +3,14 @@
    function donatePage()
    {
      // Code to take us to the donate page
-     window.open('https://d4q2.github.io/donate');
+     location.href = "https://d4q2.github.io/donate";
    }
 
 
-   // And for the settings page
+   // And for the home page
    function homePage()
    {
-     window.open('https://d4q2.github.io/home');
+     location.href = "https://d4q2.github.io/home";
    }
 
 
@@ -37,7 +37,7 @@
         donateButton.setAttribute("id", "donateButton");
 
         // Change the onclick value to what we want (in this case a function to take us  to the donate page)
-        donateButton.onclick = "location.href = 'https://d4q2.github.io/donate';";
+        donateButton.onclick = donatePage;
 
         // Append donateButton to the menu <div>
         menu.appendChild(donateButton);
