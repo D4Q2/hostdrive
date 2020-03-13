@@ -37,7 +37,7 @@
         donateButton.setAttribute("id", "donateButton");
 
         // Change the onclick value to what we want (in this case a function to take us  to the donate page)
-        donateButton.onclick = "location.href = 'www.yoursite.com';";
+        donateButton.onclick = "location.href = 'https://d4q2.github.io/donate';";
 
         // Append donateButton to the menu <div>
         menu.appendChild(donateButton);
