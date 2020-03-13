@@ -77,6 +77,8 @@ body
   .safeDriveImage
   {
     grid-area: safeDriveImage;
+    width: 500px;
+    text-align: center;
     padding: 20px 0;
   }
 
@@ -124,6 +126,8 @@ body
   .bdayDriveImage
   {
     grid-area: bdayDriveImage;
+    width: 500px;
+    text-align: center;
     padding: 20px 0;
   }
 
