@@ -74,6 +74,12 @@ body
     margin-left: -10px;
   }
 
+  .safeDriveImage
+  {
+    grid-area: safeDriveImage;
+    padding: 20px 0;
+  }
+
   .safeDriveHeader
   { 
     grid-area: safeDriveHeader; 
@@ -112,6 +118,12 @@ body
     grid-area: safeStep4Text; 
     text-align: center;
     font-size: 12pt;
+    padding: 20px 0;
+  }
+
+  .bdayDriveImage
+  {
+    grid-area: bdayDriveImage;
     padding: 20px 0;
   }
 
@@ -172,8 +184,10 @@ body
       'menu menu menu menu'
       'title title title title'
       'subtitle subtitle subtitle subtitle'
+      'safeDriveImage safeDriveImage safeDriveImage safeDriveImage'
       'safeDriveHeader safeDriveHeader safeDriveHeader safeDriveHeader'
       'safeStep1Text safeStep2Text safeStep3Text safeStep4Text'
+      'bdayDriveImage bdayDriveImage bdayDriveImage bdayDriveImage'
       'bdayDriveHeader bdayDriveHeader bdayDriveHeader bdayDriveHeader'
       'bdayStep1Text bdayStep2Text bdayStep3Text bdayStep4Text'
       'donations donations donations donations';
