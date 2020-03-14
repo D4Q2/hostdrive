@@ -40,22 +40,22 @@
        // Create a button (in this case it will be the home button)
        var homeButton = document.createElement("BUTTON");
 
-        // Change the innerHTML to a sensible set of text (in this case home)
-        homeButton.innerHTML = "Home";
+        // Create a button (in this case it will be the help out button)
+       var helpOutButton = document.createElement("BUTTON");
 
-        // Change the class to the class for menu buttons and the id to homeButton so we can access it 
+        // Change the innerHTML to a sensible set of text (in this case help out)
+        helpOutButton.innerHTML = "Help Out";
+
+        // Change the class to the class for menu buttons and the id to helpOutButton so we can access it 
         // easier and it can assume previously defined css values
-        homeButton.setAttribute("class", "menuButton");
-        homeButton.setAttribute("id", "homeButton");
+        helpOutButton.setAttribute("class", "menuButton");
+        helpOutButton.setAttribute("id", "helpOutButton");
 
-        // Change the onclick value to what we want (in this case a function to take us  to the home page)
-        homeButton.onclick = homePage;
+        // Change the onclick value to what we want (in this case a function to take us  to the help out page)
+        helpOutButton.onclick = helpOutPage;
 
-        // Append donateButton to the menu <div>
-        menu.appendChild(homeButton);
-
-        // Move it into the perfect position
-        homeButton.style.transform = "translateX(-10px)";
+        // Append helpOutButton to the menu <div>
+        menu.appendChild(helpOutButton);
         
         // And also the same process for the host drive button
         var hostDriveButton = document.createElement("BUTTON");
