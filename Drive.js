@@ -1,15 +1,28 @@
-
    // A function to take us to the donate page
-   function donatePage()
+   function helpOutPage()
    {
      // Code to take us to the donate page
-     location.href = "https://d4q2.github.io/donate";
+     location.href = "https://d4q2.github.io/helpout";
    }
 
+   // A function to take us to the donate animals page
+   function donationLocationsPage()
+   {
+     // Code to take us to the donate page
+     location.href = "https://d4q2.github.io/donationlocations";
+   }
+
+   // A function to take us to the donate page
+   function donateMoneyPage()
+   {
+     // Code to take us to the donate page
+     location.href = "https://d4q2.github.io/donatemoney";
+   }
 
    // And for the home page
    function homePage()
    {
+     // Code that takes us to the home page
      location.href = "https://d4q2.github.io/home";
    }
 
@@ -54,6 +67,33 @@
         menu.appendChild(homeButton);
         homeButton.style.transform = "translateX(-20px)";
         homeButton.onclick = homePage;
+        
+        // And also the same process for the host drive button
+        var hostDriveButton = document.createElement("BUTTON");
+        hostDriveButton.innerHTML = "Host Drive";
+        hostDriveButton.setAttribute("class", "menuButton");
+        hostDriveButton.setAttribute("id", "hostDriveButton");
+        menu.appendChild(hostDriveButton);
+        hostDriveButton.style.transform = "translateX(-20px)";
+        hostDriveButton.onclick = hostDrivePage;
+        
+        // And also the same process for the donation locations button
+        var donationLocationsButton = document.createElement("BUTTON");
+        donationLocationsButton.innerHTML = "Donation Locations";
+        donationLocationsButton.setAttribute("class", "menuButton");
+        donationLocationsButton.setAttribute("id", "donationLocationsButton");
+        menu.appendChild(donationLocationsButton);
+        donationLocationsButton.style.transform = "translateX(-30px)";
+        donationLocationsButton.onclick = donationLocationsPage;
+        
+        // And also the same process for the donate money button
+        var donateMoneyButton = document.createElement("BUTTON");
+        donateMoneyButton.innerHTML = "Donate Money";
+        donateMoneyButton.setAttribute("class", "menuButton");
+        donateMoneyButton.setAttribute("id", "moneyButton");
+        menu.appendChild(donateMoneyButton);
+        donateMoneyButton.style.transform = "translateX(-40px)";
+        donateMoneyButton.onclick = donateMoneyPage;
      }
 
      else
