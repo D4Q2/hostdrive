@@ -26,7 +26,6 @@
      location.href = "https://d4q2.github.io/home";
    }
 
-
    let menuBool = false;
 
    function openMenu()
@@ -38,35 +37,25 @@
      {
        var menu = document.getElementById("menu");
 
-       // Create a button (in this case it will be the donate button)
-       var donateButton = document.createElement("BUTTON");
+       // Create a button (in this case it will be the home button)
+       var homeButton = document.createElement("BUTTON");
 
-        // Change the innerHTML to a sensible set of text (in this case donate)
-        donateButton.innerHTML = "Donate";
-
-        // Change the class to the class for menu buttons and the id to donateButton so we can access it 
-        // easier and it can assume previously defined css values
-        donateButton.setAttribute("class", "menuButton");
-        donateButton.setAttribute("id", "donateButton");
-
-        // Change the onclick value to what we want (in this case a function to take us  to the donate page)
-        donateButton.onclick = donatePage;
-
-        // Append donateButton to the menu <div>
-        menu.appendChild(donateButton);
-
-        // Move it into the perfect position
-        donateButton.style.transform = "translateX(-10px)";
-
-        
-        // And also the same process for the home button
-        var homeButton = document.createElement("BUTTON");
+        // Change the innerHTML to a sensible set of text (in this case home)
         homeButton.innerHTML = "Home";
+
+        // Change the class to the class for menu buttons and the id to homeButton so we can access it 
+        // easier and it can assume previously defined css values
         homeButton.setAttribute("class", "menuButton");
         homeButton.setAttribute("id", "homeButton");
-        menu.appendChild(homeButton);
-        homeButton.style.transform = "translateX(-20px)";
+
+        // Change the onclick value to what we want (in this case a function to take us  to the home page)
         homeButton.onclick = homePage;
+
+        // Append donateButton to the menu <div>
+        menu.appendChild(homeButton);
+
+        // Move it into the perfect position
+        homeButton.style.transform = "translateX(-10px)";
         
         // And also the same process for the host drive button
         var hostDriveButton = document.createElement("BUTTON");
