@@ -57,14 +57,17 @@
         // Append helpOutButton to the menu <div>
         menu.appendChild(helpOutButton);
         
-        // And also the same process for the host drive button
-        var hostDriveButton = document.createElement("BUTTON");
-        hostDriveButton.innerHTML = "Host Drive";
-        hostDriveButton.setAttribute("class", "menuButton");
-        hostDriveButton.setAttribute("id", "hostDriveButton");
-        menu.appendChild(hostDriveButton);
-        hostDriveButton.style.transform = "translateX(-20px)";
-        hostDriveButton.onclick = hostDrivePage;
+        // add an offset so that the buttons are not touching each other
+        helpOutButton.style.transform = "translateX(-10px)";
+        
+        // And also the same process for the donation locations button
+        var homeButton = document.createElement("BUTTON");
+        homeButton.innerHTML = "Home";
+        homeButton.setAttribute("class", "menuButton");
+        homeButton.setAttribute("id", "homeButton");
+        menu.appendChild(homeButton);
+        homeButton.style.transform = "translateX(-20px)";
+        homeButton.onclick = homePage;
         
         // And also the same process for the donation locations button
         var donationLocationsButton = document.createElement("BUTTON");
